@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bloxium</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Bloxium</div>
+    <nav>
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('forum')">Forum</a>
+      <a onclick="showPage('profile')">Profile</a>
+    </nav>
+    <input type="text" id="searchBox" placeholder="Search..." onkeydown="if(event.key==='Enter'){searchSite()}">
+    
+  </header>
+
+  <div id="auth" class="auth-box">
+    <h2>Welcome to Bloxium!</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="authBtn" onclick="handleAuth()">Register</button>
+    <p id="switchText">Already have an account? <span onclick="toggleAuth()">Login</span></p>
+  </div>
+
+  <main id="main" class="hidden">
+    <section id="home" class="page hidden">
+      <h2>Home</h2>
+      <img src="avatar.png" class="home-avatar" />
+      <p id="nickname"></p>
+      <button onclick="alert('Friend system coming soon')">Add Friends</button>
+      <p>No games available</p>
+    </section>
+
+    <section id="forum" class="page hidden">
+      <h2>Forum</h2>
+      <textarea id="forumInput" placeholder="Write a message..."></textarea><br>
+      <button onclick="sendMessage()">Send</button>
+      <div id="forumMessages"></div>
+    </section>
+
+    <section id="profile" class="page hidden">
+      <h2>Your Profile</h2>
+      <img src="avatar.png" class="avatar" />
+      <p>Name: <span id="profileName"></span></p>
+      <p>Friends: <span id="profileFriends"></span></p>
+      <p>Registration Date: <span id="profileDate"></span></p>
+      <button onclick="logout()">Leave</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+<div class="token-counter">$ <span id="bloomDisplay">0</span> Blooms</div>
+</body>
+</html>
