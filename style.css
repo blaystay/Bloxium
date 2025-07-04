@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: white;
+}
+header {
+  background: #222;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  font-weight: bold;
+}
+nav a {
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+}
+input#searchBox {
+  padding: 5px;
+}
+.hidden {
+  display: none;
+}
+.auth-box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+input, select, textarea {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+}
+button {
+  padding: 10px;
+  background: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.home-avatar {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+section {
+  padding: 20px;
+}
+.message {
+  background: #2a2a2a;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+
+/* Mobile optimization */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .auth-box, section {
+    padding: 10px;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .home-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  input, textarea, button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  input#searchBox {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+
+/* Desktop styles (по умолчанию) остаются без изменений */
+
+/* Mobile styles (автоматически применяется, если ширина экрана < 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  input#searchBox {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .auth-box, section {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .home-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  input, textarea, button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
