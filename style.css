@@ -1,0 +1,375 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: white;
+}
+header {
+  background: #222;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  font-weight: bold;
+}
+nav a {
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+}
+input#searchBox {
+  padding: 5px;
+}
+.hidden {
+  display: none;
+}
+.auth-box {
+  max-width: 400px;
+  margin: 50px auto;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+input, select, textarea {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+}
+button {
+  padding: 10px;
+  background: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.home-avatar {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+section {
+  padding: 20px;
+}
+.message {
+  background: #2a2a2a;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+
+/* Mobile optimization */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .auth-box, section {
+    padding: 10px;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .home-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  input, textarea, button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  input#searchBox {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+
+/* Desktop styles (по умолчанию) остаются без изменений */
+
+/* Mobile styles (автоматически применяется, если ширина экрана < 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  input#searchBox {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .auth-box, section {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .home-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  input, textarea, button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+.token-counter {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  z-index: 999;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.token-counter {
+  margin-left: auto;
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.logo {
+  font-weight: bold;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.game-card {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.game-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.game-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.game-status {
+  color: #0f0;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+
+.game-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 10px;
+}
+
+.game-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.game-status {
+  color: #0f0;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+.logo {
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.token-counter {
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+
+header {
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.header-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.token-counter {
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-center a {
+  margin: 0;
+  padding: 0 10px;
+  line-height: 1;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+
+.header-center {
+  padding-top: 4px; /* Чуть ниже навигация */
+}
+
+
+.header-center {
+  padding-top: 10px; /* Опущено ещё ниже */
+}
+
+
+.header-center {
+  transform: translateY(6px); /* Смещение вниз */
+}
+
+
+.header-center a {
+  margin-top: 8px; /* Надежное вертикальное смещение навигации вниз */
+}
+
+
+.header-center a {
+  margin-top: 16px; /* Ещё ниже */
+}
+
+
+@media screen and (max-width: 768px) {
+  .header-center a {
+    margin-top: 15px; /* Только на мобильных устройствах */
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header-center a {
+    margin-top: 14px; /* Чуть ближе кверху */
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header-center a {
+    margin-top: 13px; /* Смещение ровно на 13 пикселей */
+  }
+}
+
+
+.auth-box {
+  margin-top: 120px; /* Сдвиг вниз */
+  border-radius: 20px; /* Более мягкие углы */
+}
+
+
+.auth-box {
+  margin-top: 100px; /* Чуть выше, чем раньше */
+  border-radius: 12px; /* Меньшее скругление, не слишком круглое */
+}
+
+
+/* Убираем закрепление логотипа и счётчика монет */
+.logo {
+  position: static !important;
+  z-index: auto !important;
+}
+
+.token-counter {
+  position: static !important;
+  z-index: auto !important;
+}
+
+
+/* Закрепляем логотип и счётчик монет */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 70px; /* Добавим отступ сверху под фиксированную шапку */
+}
